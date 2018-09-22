@@ -1,36 +1,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
-import styled from 'styled-components';
+import { graphql, StaticQuery } from 'gatsby';
 
 import Header from './header';
+import Footer from './footer';
 import './layout.css';
+// import styled from 'styled-components';
 
-const OuterWrapper = styled.div`
-  text-decoration: none;
-  li {
-    a {
-      text-decoration: none;
-    }
+// const Wrapper = styled.div`
+//   h1 {
+//     font-weight: 300;
+//   }
+// `;
 
-  }
-`;
+
 
 const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
+    <StaticQuery
+      query ={graphql`
+        query LayoutQuery{
+          site {
+            siteMetadata {
+              title
+            }
           }
         }
-      }
-    `}
-    render={data => (
-      <>
-        <Helmet
+      `}
+      render={data => (
+        <>
+      <Helmet
           title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: 'Sample' },
@@ -39,21 +38,26 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
+        
         <Header siteTitle={data.site.siteMetadata.title} />
-        <OuterWrapper
+
+        <div
           style={{
             margin: '0 auto',
             maxWidth: 960,
+            minHeight: '80vh',
             padding: '0px 1.0875rem 1.45rem',
             paddingTop: 0,
             color: '#4d4d4d',
           }}
-        >
+          >
           {children}
-        </OuterWrapper>
-      </>
-    )}
-  />
+        
+        </div>
+        <Footer />
+        </>
+      )}
+    />
 );
 
 Layout.propTypes = {
@@ -61,3 +65,6 @@ Layout.propTypes = {
 };
 
 export default Layout;
+
+
+

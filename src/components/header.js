@@ -27,6 +27,7 @@ const HeaderWrapper = styled.div`
       list-style: none;
       margin-right: 20px;
       padding-top: 12px;
+      font-size: 1.3rem;
     }
   }
   a {
@@ -49,7 +50,7 @@ const Header = ({ siteTitle }) => (
   <HeaderWrapper>
 
     <LogoContainer>
-      <h1>
+      <h1 style={{fontWeight: '500', fontSize: '2.25rem'}}>
         <Link to="/">
           {siteTitle}
         </Link>
@@ -58,7 +59,7 @@ const Header = ({ siteTitle }) => (
     </LogoContainer>
 
     <NavContainer >
-      <ul style={{textDecoration: 'none'}}>
+      <ul>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -67,6 +68,9 @@ const Header = ({ siteTitle }) => (
         </li>
         <li>
           <Link to="/contact/">Contact</Link>
+        </li>
+        <li>
+          <Link to="/portfolio/">Portfolio</Link>
         </li>
       </ul>
     </NavContainer>
