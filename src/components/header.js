@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styled from 'styled-components';
+import styled from 'react-emotion';
 
 
-const HeaderWrapper = styled.div`
+const HeaderWrapper = styled('div')`
   position: relative;
   display: inline-flex;
-  max-width: 960px;
-  padding: 1.45rem 1.0875rem;
+  max-width: 100%;
+  padding: 1.45rem 0rem 1.45rem;
   background: inherit;
   marginBottom: 1.45rem;
   
@@ -15,6 +15,7 @@ const HeaderWrapper = styled.div`
     a {
       text-decoration: none;
       color: #4d4d4d;
+      padding-left: 40px;
     }
   }
   p {
@@ -36,14 +37,15 @@ const HeaderWrapper = styled.div`
   }
 `;
 
-const LogoContainer = styled.div`
+const LogoContainer = styled('div')`
   min-width: 75vw;
   margin: 0 auto';
 `;
 
-const NavContainer = styled.div`
-  min-width: 25%;
-  margin-right: 20px;
+const NavContainer = styled('div')`
+  min-width: 25vw;
+  margin: 0;
+
 `;
 
 const Header = ({ siteTitle }) => (

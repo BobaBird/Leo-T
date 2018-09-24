@@ -5,9 +5,9 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-emotion',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

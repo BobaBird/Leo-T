@@ -6,13 +6,16 @@ import { graphql, StaticQuery } from 'gatsby';
 import Header from './header';
 import Footer from './footer';
 import './layout.css';
-// import styled from 'styled-components';
+import styled, { css } from 'react-emotion';
 
-// const Wrapper = styled.div`
-//   h1 {
-//     font-weight: 300;
-//   }
-// `;
+const layoutStyle = css`
+  margin: 0 auto;
+  max-width: 960px;
+  min-height: 95vh;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+  color: #4d4d4d;
+`;
 
 
 
@@ -41,16 +44,7 @@ const Layout = ({ children }) => (
         
         <Header siteTitle={data.site.siteMetadata.title} />
 
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            minHeight: '80vh',
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-            color: '#4d4d4d',
-          }}
-          >
+        <div className={ layoutStyle } >
           {children}
         
         </div>
