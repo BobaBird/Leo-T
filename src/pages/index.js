@@ -4,22 +4,32 @@ import styled from 'react-emotion';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
+import PostListing from '../components/Post/PostListing'
 
-
-const ImageWrapper = styled('img')`
+const HomeStykles = styled('css')`
   position: relative;
-  min-width: 100vh;
 `;
 
+
 const IndexPage = ({ data }) => (
+  <div>
+     <Img fluid={data.background.fluid} alt="Bears in the mist." />
     <Layout>
-      <ImageWrapper>
-        {/* <Img sizes={data.background.fluid} alt="Bears in the mist." /> */}
-      </ImageWrapper>
+      
+      
 
       <h1>Leo Torres | Web Developer</h1>
       <h2>Websites, Blogs, E-Commerce</h2>
       <p>Custom sites for what you need.</p>
+      <div>
+        <div>
+          <h1 >
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <PostListing key={node.id} post={node} />
+          ))}
+          </h1> 
+        </div>
+      </div>
       <ul>
         <li >
           <Link to="/about/">Go to the about page</Link>
@@ -34,22 +44,31 @@ const IndexPage = ({ data }) => (
       </ul>
       
     </Layout>
+  </div>    
 );
+
 
 export default IndexPage;
 
 export const query = graphql`
   query siteImageQuery {
-  background: allImageSharp {
+    background: imageSharp(fluid: {originalName: {eq: "homeBG.jpg" } } ) {
+			fluid(maxWidth: 1240) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+  allMarkdownRemark {
     edges {
-      next {
-        fluid(maxWidth: 1240) {
-          aspectRatio
-          sizes
-          src
+      node {
+        id
+        frontmatter {
+          title
+          date
         }
+        html
       }
     }
-   }  
+  }
+
   }
 `;

@@ -12,6 +12,8 @@ const HeaderWrapper = styled('div')`
   marginBottom: 1.45rem;
   
   h1 {
+    font-weight: 500;
+    font-size: 2.25rem;
     a {
       text-decoration: none;
       color: #4d4d4d;
@@ -40,6 +42,10 @@ const HeaderWrapper = styled('div')`
 const LogoContainer = styled('div')`
   min-width: 75vw;
   margin: 0 auto';
+  h1 {
+    font-weight: 500;
+    font-size: 2.25rem;
+  }
 `;
 
 const NavContainer = styled('div')`
@@ -52,7 +58,7 @@ const Header = ({ siteTitle }) => (
   <HeaderWrapper>
 
     <LogoContainer>
-      <h1 style={{fontWeight: '500', fontSize: '2.25rem'}}>
+      <h1 >
         <Link to="/">
           {siteTitle}
         </Link>
