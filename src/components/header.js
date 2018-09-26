@@ -17,7 +17,8 @@ const HeaderWrapper = styled('div')`
     font-size: 2.25rem;
     a {
       text-decoration: none;
-      color: #fff;
+      // color: #fff;
+      color: black;
       padding-left: 40px;
     }
   }

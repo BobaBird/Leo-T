@@ -111,6 +111,7 @@ export const query = graphql`
           date
         }
         html
+        excerpt
       }
     }
   }
