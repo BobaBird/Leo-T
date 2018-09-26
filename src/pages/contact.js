@@ -60,7 +60,8 @@ const ContactPage = () => (
         <p>Want to get started; still have questions? Drop me a line.</p>
         <p></p>
 
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
           <p>
             <label>Your Name: </label>   
               <input type="text" name="name" required />
