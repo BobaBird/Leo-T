@@ -35,7 +35,21 @@ const Container = styled('div')`
       color: #1f2023;
       border-bottom: 2px solid;
     }
-}
+  }
+
+  button {
+    border-radius: 4px;
+    border: none;
+    box-shadow: 2px 2px 4px #4d4d4d;
+    outline: none;
+    width 80px;
+    background: #4c90ff;
+    color: #fff;
+
+    &:hover {
+      color: chartreuse;
+    }
+  }
 `;
 
 const ContactPage = () => (

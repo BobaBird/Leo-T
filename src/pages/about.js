@@ -58,7 +58,7 @@ const AboutPage = ({ data }) => (
       <Container>
 
         <h1>About</h1>
-        <p>Read all about meh</p>
+        <p>Read all about me.</p>
         <Link to="/">Go back to the homepage</Link>
 
       </Container>
