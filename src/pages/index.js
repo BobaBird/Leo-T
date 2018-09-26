@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styled, { css } from 'react-emotion';
+import styled from 'react-emotion';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
@@ -42,8 +42,6 @@ const Container = styled('div')`
 
 const IndexPage = ({ data }) => (
   <div>
-    
-    
     
     <OuterWrapper>
     <Layout>
