@@ -29,9 +29,10 @@ const Container = styled('div')`
   }
   a {
     // color: #4d4d4d;
-    color: #fff;
+    // color: #fff;
+    color: #4d4d4d;
     &:hover {
-      color: orange;
+      color: #1f2023;
       border-bottom: 2px solid;
     }
 }
@@ -43,6 +44,26 @@ const ContactPage = () => (
       <Container>
         <h1>Contact</h1>
         <p>Welcome to the contact page</p>
+
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name: </label>   
+              <input type="text" name="name" required />
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email" required /></label>
+          </p>
+          
+          <p  >
+            <label style={{display: 'block', marginLeft: '60px', paddingBottom: '30px'}} >Message </label>
+            <textarea name="message" required ></textarea>
+            
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+
         <Link to="/">Go back to the homepage</Link>
       </Container>
     </Layout>

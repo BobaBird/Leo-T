@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 
 const OuterWrapper = styled('div')`
 position: relative;
-// background: black;
+background: black;
 overflow: hidden;
 font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
   Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -29,9 +29,10 @@ const Container = styled('div')`
   }
   a {
     // color: #4d4d4d;
-    color: #fff;
+    // color: #fff;
+    color; #4d4d4d;
     &:hover {
-      color: orange;
+      color: #898989;
       border-bottom: 2px solid;
     }
 }

@@ -18,7 +18,8 @@ const HeaderWrapper = styled('div')`
     a {
       text-decoration: none;
       // color: #fff;
-      color: black;
+      color: #1f2023;
+      text-shadow: 0.5px 0.5px 1px #636363, -0.25px -0.25px 4px #636363;
       padding-left: 40px;
     }
   }

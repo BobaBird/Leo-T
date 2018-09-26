@@ -33,7 +33,7 @@ const Container = styled('div')`
     // color: #4d4d4d;
     color: #fff;
     &:hover {
-      color: orange;
+      color: #1f2023;
       border-bottom: 2px solid;
     }
 }
@@ -100,21 +100,20 @@ export const query = graphql`
     background: imageSharp(fluid: {originalName: {eq: "homeBG.jpg" } } ) {
 			fluid(maxWidth: 1240) {
       ...GatsbyImageSharpFluid
-    }
-  }
-  allMarkdownRemark {
-    edges {
-      node {
-        id
-        frontmatter {
-          title
-          date
-        }
-        html
-        excerpt
       }
     }
-  }
-
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date
+          }
+          html
+          excerpt
+        }
+      }
+    }
   }
 `;
