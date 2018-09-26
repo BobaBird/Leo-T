@@ -43,7 +43,8 @@ const ContactPage = () => (
     <Layout>
       <Container>
         <h1>Contact</h1>
-        <p>Welcome to the contact page</p>
+        <p>Want to get started; still have questions? Drop me a line.</p>
+        <p></p>
 
         <form name="contact" method="POST" data-netlify="true">
           <p>
@@ -55,8 +56,8 @@ const ContactPage = () => (
           </p>
           
           <p  >
-            <label style={{display: 'block', marginLeft: '60px', paddingBottom: '30px'}} >Message </label>
-            <textarea name="message" required ></textarea>
+            <label style={{display: 'block', marginLeft: '190px', padding: '20px 0'}} >Message </label>
+            <textarea name="message" cols="50" rows="8" required ></textarea>
             
           </p>
           <p>

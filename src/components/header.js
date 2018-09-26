@@ -39,6 +39,7 @@ const HeaderWrapper = styled('div')`
   a {
     color: #FF7C00;
     text-decoration: none;
+    
   }
 `;
 
@@ -57,6 +58,11 @@ const NavContainer = styled('div')`
   min-width: 25vw;
   margin: 0;
 
+  a {
+    &:hover {
+      border-bottom: 4px solid cornflowerblue;
+    }
+  }
 `;
 
 const Header = ({ siteTitle }) => (
