@@ -6,15 +6,11 @@ import { graphql, StaticQuery } from 'gatsby';
 import Header from './header';
 import Footer from './footer';
 import './layout.css';
-import styled, { css } from 'react-emotion';
+import  { css } from 'react-emotion';
 
 const layoutStyle = css`
   margin: 0 auto;
-  max-width: 960px;
-  min-height: 95vh;
-  padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
-  color: #4d4d4d;
 `;
 
 

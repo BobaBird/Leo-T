@@ -2,7 +2,7 @@ module.exports = {
     "extends": "airbnb",
     "plugins": [
         "react",
-        "jsx-ally",
+        "eslint-plugin-jsx-ally",
         "import"
     ]
 };

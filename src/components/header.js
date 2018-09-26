@@ -10,13 +10,14 @@ const HeaderWrapper = styled('div')`
   padding: 1.45rem 0rem 1.45rem;
   background: inherit;
   marginBottom: 1.45rem;
-  
+
+
   h1 {
     font-weight: 500;
     font-size: 2.25rem;
     a {
       text-decoration: none;
-      color: #4d4d4d;
+      color: #fff;
       padding-left: 40px;
     }
   }
@@ -40,6 +41,7 @@ const HeaderWrapper = styled('div')`
 `;
 
 const LogoContainer = styled('div')`
+  z-index: 3;
   min-width: 75vw;
   margin: 0 auto';
   h1 {
@@ -49,6 +51,7 @@ const LogoContainer = styled('div')`
 `;
 
 const NavContainer = styled('div')`
+  z-index: 3;
   min-width: 25vw;
   margin: 0;
 

@@ -1,8 +1,16 @@
 import React from 'react';
 import styled from "react-emotion";
 
-const FooterWrapper = styled.div`
+const FooterWrapper = styled('div')`
     display: flex;
+    position: sticky;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    z-index: 10;
+
     justify-content: space-around;
     margin: 0 auto;
     padding-top: 50px;
@@ -13,7 +21,7 @@ const FooterWrapper = styled.div`
     color: #6a6a6a;
 `;
 
-const SectionContainer = styled.div`
+const SectionContainer = styled('div')`
     text-align: center;
     justify-content: space-around;
     ul {
@@ -24,14 +32,14 @@ const SectionContainer = styled.div`
     }
 `;
 
-const Titles = styled.h1`
+const Titles = styled('h1')`
     font-size: 2rem;
     text-align: center;
 `;
 
 
 const Footer = () => (
-    <FooterWrapper style={{display: 'flex', justifyContent: 'space-around'}}>
+    <FooterWrapper>
 
         <SectionContainer>
             <Titles>Social Media</Titles>
