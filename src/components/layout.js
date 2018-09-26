@@ -6,7 +6,7 @@ import { graphql, StaticQuery } from 'gatsby';
 import Header from './header';
 import Footer from './footer';
 import './layout.css';
-import styled, { css } from 'react-emotion';
+import { css } from 'react-emotion';
 
 const layoutStyle = css`
   margin: 0 auto;
