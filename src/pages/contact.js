@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
 
 import Layout from '../components/layout';
 
@@ -39,17 +39,40 @@ const Container = styled('div')`
 
   button {
     border-radius: 4px;
-    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 45px;
+    text-transform: uppercase;
+    border: red;
     box-shadow: 2px 2px 4px #4d4d4d;
     outline: none;
-    width 80px;
-    background: #4c90ff;
+    width 180px;
+    background: red;
     color: #fff;
 
     &:hover {
-      color: chartreuse;
+
+      // transition: all 550ms cubic-bezier(0.19, 0.51, 0.12, 1);
+      transition: all 2s ease;
+      background: rgba(0, 0, 0, 0);
+      color: red;
+      box-shadow: 2px 2px 4px #4d4d4d, inset 0 0 0 3px red;
     }
   }
+`;
+
+const Animations = css`
+
+
+ @keyframes BtnHover {
+   from {
+    transform: translateX(0px);
+   }
+
+   to {
+    transform: translateX(0px);
+   }
+ }
 `;
 
 const ContactPage = () => (
@@ -76,7 +99,7 @@ const ContactPage = () => (
             
           </p>
           <p>
-            <button type="submit">Send</button>
+            <button   type="submit">Send</button>
           </p>
         </form>
 

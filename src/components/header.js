@@ -60,7 +60,8 @@ const NavContainer = styled('div')`
 
   a {
     &:hover {
-      border-bottom: 4px solid cornflowerblue;
+      transition: all 230ms ease;
+      border-bottom: 5px solid cornflowerblue;
     }
   }
 `;
