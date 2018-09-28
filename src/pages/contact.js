@@ -49,14 +49,39 @@ const Container = styled('div')`
     width 180px;
     background: red;
     color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 20;
 
-    &:hover {
+    span {
+      z-index: 20;
 
-      // transition: all 550ms cubic-bezier(0.19, 0.51, 0.12, 1);
-      transition: all 2s ease;
-      background: rgba(0, 0, 0, 0);
-      color: red;
-      box-shadow: 2px 2px 4px #4d4d4d, inset 0 0 0 3px red;
+    }
+    &:active {
+      background-color: #e01111;
+      color: #fff;
+      background-size: 100%;
+      transition: background 0s;
+    }
+
+    &:after {
+      background: #fff;
+      content: "";
+      height: 155px;
+      left: -75px;
+      opacity: .2;
+      position: absolute;
+      top: -50px;
+      transform: rotate(35deg);
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      width: 50px;
+      z-index: -10;
+    }
+  }
+  button:hover {
+    &:after {
+      left: 120%;
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
 `;
@@ -99,7 +124,7 @@ const ContactPage = () => (
             
           </p>
           <p>
-            <button   type="submit">Send</button>
+            <button   type="submit"><span>Send</span></button>
           </p>
         </form>
 

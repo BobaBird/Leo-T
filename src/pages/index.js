@@ -44,48 +44,48 @@ const IndexPage = ({ data }) => (
   <div>
     
     <OuterWrapper>
-    <Layout>
+      <Layout>
 
 
-     <Img
-     style={{
-       position: 'absolute',
-       top: '0',
-       left: '0',
-       width: '100%',
-       height: '90%',
-       zIndex: '2',
-       opacity: '0.8',
-      }}
-      fluid={data.background.fluid} alt="Bears in the mist." 
-      />
-      <Container>
-        <h1>Leo Torres | Web Developer</h1>
-        <h2 >Websites, Blogs, E-Commerce</h2>
-        <p >Custom sites for what you need.</p>
-        <div>
+      <Img
+      style={{
+        position: 'absolute',
+        top: '0',
+        left: '0',
+        width: '100%',
+        height: '90%',
+        zIndex: '2',
+        opacity: '0.8',
+        }}
+        fluid={data.background.fluid} alt="Bears in the mist." 
+        />
+        <Container>
+          <h1>Leo Torres | Web Developer</h1>
+          <h2 >Websites, Blogs, E-Commerce</h2>
+          <p >Custom sites for what you need.</p>
           <div>
-            <h1 >
-            {data.allMarkdownRemark.edges.map(({ node }) => (
-              <PostListing key={node.id} post={node} />
-              ))}
-            </h1> 
+            <div>
+              <h1 >
+              {data.allMarkdownRemark.edges.map(({ node }) => (
+                <PostListing key={node.id} post={node} />
+                ))}
+              </h1> 
+            </div>
           </div>
-        </div>
-        <ul>
-          <li>
-            <Link  to="/about/">Go to the about page</Link>
-          </li>
-    
-          <li>
-            <Link  to="/contact/">Go to contact page</Link>
-          </li>
-          <li>
-            <Link  to="/portfolio/">Go to portfolio page</Link>
-          </li>
-        </ul>
-      </Container>
-    </Layout>
+          <ul>
+            <li>
+              <Link  to="/about/">Go to the about page</Link>
+            </li>
+      
+            <li>
+              <Link  to="/contact/">Go to contact page</Link>
+            </li>
+            <li>
+              <Link  to="/portfolio/">Go to portfolio page</Link>
+            </li>
+          </ul>
+        </Container>
+      </Layout>
     </OuterWrapper>
   </div>    
 );

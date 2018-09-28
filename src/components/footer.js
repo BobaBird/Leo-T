@@ -18,6 +18,7 @@ const FooterWrapper = styled('div')`
     min-height: 380px;
     min-width: 100vw;
     background-color: rgba(20, 20, 20, 1);
+    // background: #323944;
     color: #6a6a6a;
 `;
 

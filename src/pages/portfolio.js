@@ -6,7 +6,8 @@ import Layout from '../components/layout';
 
 const OuterWrapper = styled('div')`
 position: relative;
-background: black;
+// background: black;
+background: #323944;
 overflow: hidden;
 font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
   Fira Sans, Droid Sans, Helvetica Neue, sans-serif;

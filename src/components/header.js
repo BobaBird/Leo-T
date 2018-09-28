@@ -19,7 +19,7 @@ const HeaderWrapper = styled('div')`
       text-decoration: none;
       // color: #fff;
       color: #1f2023;
-      text-shadow: 0.5px 0.5px 1px #636363, -0.25px -0.25px 4px #636363;
+      text-shadow: 0.5px 0.5px 1px #636363, -0.25px -0.25px 2px #636363;
       padding-left: 40px;
     }
   }
