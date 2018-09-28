@@ -6,7 +6,6 @@ import Layout from '../components/layout';
 
 const OuterWrapper = styled('div')`
   position: relative;
-  // background: black;
   // background: #323944;
   overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
@@ -96,6 +95,11 @@ const Container = styled('div')`
     color: #2276f9;
     font-weight: 500;
   }
+  
+  textarea {
+    border: 1px solid #4d4d4d;
+  }
+  
 `;
 
 const ContactPage = () => (
@@ -116,7 +120,7 @@ const ContactPage = () => (
             <label>Your Email: <input type="email" name="email" required /></label>
           </p>
           
-          <p  >
+          <p >
             <label style={{display: 'block', marginLeft: '225px', padding: '20px 0'}} >Message </label>
             <textarea name="message" cols="50" rows="8" required ></textarea>
             
