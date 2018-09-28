@@ -26,7 +26,9 @@ const Container = styled('div')`
   // color: #4d4d4d;
   color: #fff;
   p {
-    
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    font-weight: 400;
   }
   a {
     // color: #4d4d4d;
@@ -59,7 +61,13 @@ const AboutPage = ({ data }) => (
       <Container>
 
         <h1>About</h1>
-        <p>Read all about me.</p>
+          <p>
+            Lorem ipsum dolor amet edison bulb raclette skateboard typewriter bitters, heirloom cloud
+            bread tacos tumeric glossier. Pitchfork sustainable schlitz selfies ennui, roof party
+            craft beer 8-bit semiotics. Live-edge bespoke offal microdosing edison bulb crucifix.
+            Taxidermy kale chips pickled vexillologist chambray. Tumblr fixie poutine ennui mlkshk
+            cloud bread.
+          </p>
         <Link to="/">Go back to the homepage</Link>
 
       </Container>

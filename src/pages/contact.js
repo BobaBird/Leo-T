@@ -5,11 +5,12 @@ import styled from 'react-emotion';
 import Layout from '../components/layout';
 
 const OuterWrapper = styled('div')`
-position: relative;
-// background: black;
-overflow: hidden;
-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-  Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  position: relative;
+  // background: black;
+  // background: #323944;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 `;
 
 const Container = styled('div')`
@@ -23,15 +24,16 @@ const Container = styled('div')`
   min-height: 80vh;
   // text-shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d;
   color: #4d4d4d;
-  // color: #fff;
+  // color: #777c84;
   p {
     
   }
   a {
-    // color: #4d4d4d;
-    // color: #fff;
     color: #4d4d4d;
+    // color: #fff;
+    // color: #777c84;
     &:hover {
+      // color: #898989;
       color: #1f2023;
       border-bottom: 2px solid;
     }
@@ -84,6 +86,16 @@ const Container = styled('div')`
       transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
+
+  input,
+  select,
+  textarea {
+    // -webkit-text-fill-color: #2276f9;
+    -webkit-text-fill-color: #4b5970;
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
+    color: #2276f9;
+    font-weight: 500;
+  }
 `;
 
 const ContactPage = () => (
@@ -105,7 +117,7 @@ const ContactPage = () => (
           </p>
           
           <p  >
-            <label style={{display: 'block', marginLeft: '190px', padding: '20px 0'}} >Message </label>
+            <label style={{display: 'block', marginLeft: '225px', padding: '20px 0'}} >Message </label>
             <textarea name="message" cols="50" rows="8" required ></textarea>
             
           </p>
