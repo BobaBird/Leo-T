@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styled, { css } from 'react-emotion';
+import styled from 'react-emotion';
 
 import Layout from '../components/layout';
 
@@ -84,20 +84,6 @@ const Container = styled('div')`
       transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
-`;
-
-const Animations = css`
-
-
- @keyframes BtnHover {
-   from {
-    transform: translateX(0px);
-   }
-
-   to {
-    transform: translateX(0px);
-   }
- }
 `;
 
 const ContactPage = () => (

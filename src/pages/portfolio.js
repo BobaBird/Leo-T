@@ -29,9 +29,8 @@ const Container = styled('div')`
     
   }
   a {
-    // color: #4d4d4d;
-    // color: #fff;
     color; #4d4d4d;
+
     &:hover {
       color: #898989;
       border-bottom: 2px solid;
@@ -44,9 +43,12 @@ const Portfolio = () => (
       <OuterWrapper>
         <Layout>
           <Container>
+
             <h1>Portfolio</h1>
             <p>Welcome to the portfolio page</p>
+
             <Link to="/">Go back to the homepage</Link>
+            
           </Container>
         </Layout>
       </OuterWrapper>
