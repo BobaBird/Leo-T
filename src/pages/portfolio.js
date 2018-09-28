@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import styled from 'react-emotion';
+import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
 
 const OuterWrapper = styled('div')`
 position: relative;
-// background: black;
 background: #323944;
 overflow: hidden;
 font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
@@ -14,6 +15,7 @@ font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu
 `;
 
 const Container = styled('div')`
+  text-align: center;
   position: relative;
   z-index: 2;
   margin: 0 auto;
@@ -38,17 +40,85 @@ const Container = styled('div')`
 }
 `;
 
+const CardContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  padding: 1.45rem 1.0875rem 1.45rem;
 
-const Portfolio = () => (
+  @media only screen and (maxWidth: 425px) {
+    display: inline-block;
+    justify-content: space-around;
+    // padding-left: 1rem;
+  }
+  @media only screen and (min-width: 425px) {
+    padding: 0 !important;
+  }
+`;
+
+
+const Card = styled.div`
+// Use Stripe box-shadow values  **philz tip**
+  position: relative;
+  margin: 20px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 4px;
+  min-width: 400px;
+  // max-width: 350px;
+  // height: 504px;
+  // min-height: 304px;
+  box-shadow: 0 8px 26px 0 rgba(0, 0, 0, 0.15), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+   p {
+     padding: 1rem;
+     font-size: 14px;
+   }
+
+  @media only screen and (max-width 1082px) and (min-width: 426px) {
+    margin-top: 2.5rem;
+  }
+
+  @media only screen and (max-width: 425px) {
+    margin-top: 80px;
+    p {
+      font-size: 0.8rem;
+    }
+  }
+`;
+
+
+const Portfolio = ({ data }) => (
       <OuterWrapper>
         <Layout>
           <Container>
 
             <h1>Portfolio</h1>
-            <p>Welcome to the portfolio page</p>
+            <p>Please have a look at some examples of my work.</p>
+
+            <CardContainer>
+              <Card>
+                <Img
+                  
+                  fluid={data.card.fluid} 
+                />
+              </Card>
+
+              <Card>
+                <Img
+                  
+                  fluid={data.card.fluid} 
+                />
+              </Card>
+
+              <Card>
+                <Img
+                  
+                  fluid={data.card.fluid} 
+                />
+              </Card>
+            </CardContainer>
 
             <Link to="/">Go back to the homepage</Link>
-            
+
           </Container>
         </Layout>
       </OuterWrapper>
@@ -56,6 +126,27 @@ const Portfolio = () => (
 
 export default Portfolio;
 
-
+export const query = graphql`
+  query PortfolioQuery {
+    card: imageSharp(fluid: {originalName: {eq: "homeBG.jpg" } } ) {
+			fluid(maxWidth: 1240) {
+      ...GatsbyImageSharpFluid
+      }
+    }
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date
+          }
+          html
+          excerpt
+        }
+      }
+    }
+  }
+`;
 
 
