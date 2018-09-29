@@ -28,7 +28,11 @@ const Container = styled('div')`
   p {
     font-size: 1.8rem;
     line-height: 2.9rem;
-    font-weight: 400;
+    font-weight: 300;
+  }
+  h2 {
+    // line-height: 2.9rem;
+    // font-weight: 300;
   }
   a {
     // color: #4d4d4d;
@@ -68,9 +72,14 @@ const AboutPage = ({ data }) => (
             Taxidermy kale chips pickled vexillologist chambray. Tumblr fixie poutine ennui mlkshk
             cloud bread. */}
 
-            Hi my name id Leo Torres. I enjoy making the internet one website at a time. 
+            Hi my name is Leo Torres. I enjoy making the internet one website at a time. I am a one
+            man team that can provide you with a professional, great looking website to showcase
+            your Blog, Business or whatever it is you want to share.
           </p>
-        <Link to="/">Go back to the homepage</Link>
+            <p><Link to="/portfolio/"> Take a look at some of my work.</Link></p> 
+          <p>
+            <Link to="/contact/"> Or, let's get started now.</Link>
+          </p>
 
       </Container>
 
