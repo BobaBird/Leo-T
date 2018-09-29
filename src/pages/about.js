@@ -72,7 +72,7 @@ const AboutPage = ({ data }) => (
             Taxidermy kale chips pickled vexillologist chambray. Tumblr fixie poutine ennui mlkshk
             cloud bread. */}
 
-            Hi my name is Leo Torres. I enjoy making the internet one website at a time. I am a one
+            Hi, my name is Leo Torres. I enjoy making the internet one website at a time. I'm a one
             man team that can provide you with a professional, great looking website to showcase
             your Blog, Business or whatever it is you want to share.
           </p>

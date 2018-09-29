@@ -72,7 +72,7 @@ const IndexPage = ({ data }) => (
               </h1> 
             </div>
           </div>
-          <ul>
+          {/* <ul>
             <li>
               <Link  to="/about/">Go to the about page</Link>
             </li>
@@ -83,7 +83,7 @@ const IndexPage = ({ data }) => (
             <li>
               <Link  to="/portfolio/">Go to portfolio page</Link>
             </li>
-          </ul>
+          </ul> */}
         </Container>
       </Layout>
     </OuterWrapper>
