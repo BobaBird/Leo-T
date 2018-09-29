@@ -22,6 +22,7 @@ const Container = styled('div')`
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
   margin-top: 1.45rem;
+  margin-bottom: 200px;
   max-width: 960px;
   min-height: 80vh;
   // text-shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d;
@@ -68,10 +69,15 @@ const Card = styled.div`
   // height: 504px;
   // min-height: 304px;
   box-shadow: 0 8px 26px 0 rgba(0, 0, 0, 0.15), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
-   p {
-     padding: 1rem;
-     font-size: 14px;
-   }
+
+  h1 {
+    padding: 0.8rem;
+  }
+
+  p {
+    padding: 0.8rem;
+    font-size: 18px;
+  }
 
   @media only screen and (max-width 1082px) and (min-width: 426px) {
     margin-top: 2.5rem;
@@ -93,6 +99,29 @@ const Portfolio = ({ data }) => (
 
             <h1>Portfolio</h1>
             <p>Please have a look at some examples of my work.</p>
+
+            <CardContainer>
+              <Card>
+                <Img
+                  
+                  fluid={data.card.fluid} 
+                />
+              </Card>
+
+              <Card>
+                <Img
+                  
+                  fluid={data.card.fluid} 
+                />
+              </Card>
+
+              <Card>
+                <Img
+                  
+                  fluid={data.card.fluid} 
+                />
+              </Card>
+            </CardContainer>
 
             <CardContainer>
               <Card>

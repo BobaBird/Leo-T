@@ -52,7 +52,7 @@ const AboutPage = ({ data }) => (
         left: '0',
         width: '100%',
         height: '90%',
-        zIndex: '2',
+        // zIndex: '2',
         opacity: '0.8',
         }}
         fluid={data.background.fluid} alt="Bears in the mist." 
@@ -62,11 +62,13 @@ const AboutPage = ({ data }) => (
 
         <h1>About</h1>
           <p>
-            Lorem ipsum dolor amet edison bulb raclette skateboard typewriter bitters, heirloom cloud
+            {/* Lorem ipsum dolor amet edison bulb raclette skateboard typewriter bitters, heirloom cloud
             bread tacos tumeric glossier. Pitchfork sustainable schlitz selfies ennui, roof party
             craft beer 8-bit semiotics. Live-edge bespoke offal microdosing edison bulb crucifix.
             Taxidermy kale chips pickled vexillologist chambray. Tumblr fixie poutine ennui mlkshk
-            cloud bread.
+            cloud bread. */}
+
+            Hi my name id Leo Torres. I enjoy making the internet one website at a time. 
           </p>
         <Link to="/">Go back to the homepage</Link>
 

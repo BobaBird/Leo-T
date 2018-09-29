@@ -54,7 +54,7 @@ const IndexPage = ({ data }) => (
         left: '0',
         width: '100%',
         height: '90%',
-        zIndex: '2',
+        // zIndex: '2',
         opacity: '0.8',
         }}
         fluid={data.background.fluid} alt="Bears in the mist." 
