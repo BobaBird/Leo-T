@@ -84,9 +84,9 @@ class Footer extends React.Component {
                     <SectionContainer>
                         <Titles>Social Media</Titles>
                         <ul>
-                        {/* <ShareBlockStandard {...shareBlockProps} /> */}
+
                             <li>
-                               <a href=""><FiTwitter /></a> 
+                               <a href="https://twitter.com/oso_grizz" target="_blank" rel="noopener"><FiTwitter /></a> 
                             </li>
                             <li>
                                <a href=""><FiFacebook /></a> 
