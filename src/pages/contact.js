@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 
 const OuterWrapper = styled('div')`
   position: relative;
-  // background: #323944;
+
   overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -21,18 +21,17 @@ const Container = styled('div')`
   margin-top: 1.45rem;
   max-width: 960px;
   min-height: 80vh;
-  // text-shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d;
+
   color: #4d4d4d;
-  // color: #777c84;
+
   p {
     
   }
   a {
     color: #4d4d4d;
-    // color: #fff;
-    // color: #777c84;
+    
     &:hover {
-      // color: #898989;
+
       color: #1f2023;
       border-bottom: 2px solid;
     }
@@ -89,7 +88,7 @@ const Container = styled('div')`
   input,
   select,
   textarea {
-    // -webkit-text-fill-color: #2276f9;
+
     -webkit-text-fill-color: #4b5970;
     -webkit-box-shadow: 0 0 0 30px #fff inset;
     color: #2276f9;

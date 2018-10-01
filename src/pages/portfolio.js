@@ -25,9 +25,9 @@ const Container = styled('div')`
   margin-bottom: 200px;
   max-width: 960px;
   min-height: 80vh;
-  // text-shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d;
+
   color: #4d4d4d;
-  // color: #fff;
+
   p {
     
   }
@@ -49,7 +49,7 @@ const CardContainer = styled.div`
   @media only screen and (maxWidth: 425px) {
     display: inline-block;
     justify-content: space-around;
-    // padding-left: 1rem;
+
   }
   @media only screen and (min-width: 425px) {
     padding: 0 !important;
@@ -58,16 +58,13 @@ const CardContainer = styled.div`
 
 
 const Card = styled.div`
-// Use Stripe box-shadow values  **philz tip**
   position: relative;
   margin: 20px;
   text-align: center;
   overflow: hidden;
   border-radius: 4px;
   min-width: 400px;
-  // max-width: 350px;
-  // height: 504px;
-  // min-height: 304px;
+  
   box-shadow: 0 8px 26px 0 rgba(0, 0, 0, 0.15), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
 
   h1 {
