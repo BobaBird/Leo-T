@@ -1,5 +1,14 @@
 import React from 'react';
-import styled from "react-emotion";
+import styled from 'react-emotion';
+import { FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import { FiTwitter, FiFacebook } from 'react-icons/fi';
+// import FaTwitter from 'react-icons/lib/fa/twitter';
+// import FaFacebook from "react-icons/lib/fa/facebook";
+// import FaGooglePlus from "react-icons/lib/fa/google-plus";
+// import FaEnvelope from "react-icons/lib/fa/envelope";
+// import FaPinterest from "react-icons/lib/fa/pinterest";
+// import FaLinkedin from "react-icons/lib/fa/linkedin";
+import { ShareButtonOutline, ShareBlockStandard } from 'react-custom-share';
 
 const FooterWrapper = styled('div')`
     display: flex;
@@ -13,7 +22,7 @@ const FooterWrapper = styled('div')`
 
     justify-content: space-around;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 150px;
     text-align: center;
     min-height: 380px;
     min-width: 100vw;
@@ -26,9 +35,22 @@ const SectionContainer = styled('div')`
     text-align: center;
     justify-content: space-around;
     ul {
+        align-items: center;
         li {
             display: inline-flex;
             margin-right: 20px;
+            svg {
+                height: 1.3em;
+                width: 1.3em;
+                
+                font-weigth: lighter;
+                &:hover {
+                    stroke-width: 0;
+                    color: orange;
+                    fill: orange !important;
+                }
+
+            }
         }
     }
 `;
@@ -39,46 +61,77 @@ const Titles = styled('h1')`
 `;
 
 
-const Footer = () => (
-    <FooterWrapper>
+class Footer extends React.Component {
+    render() {
+        // const shareBlockProps = {
+        //     url: "https://localhost:8000/",
+        //     button: ShareButtonOutline,
+        //     buttons: [
+        //       { network: "Twitter", icon: FiTwitter },
+        //       { network: "Facebook", icon: FiFacebook },
+        //     //   { network: "GooglePlus", icon: FiGooglePlus },
+        //       { network: "Email", icon: FaEnvelope },
+        //     //   { network: "Pinterest", icon: FiPinterest, media: "https://localhost:8000/image-to-share.jpg" },
+        //       { network: "Linkedin", icon: FaLinkedin }
+        //     ],
+        //     text: `Give it a try - mywebsite.com `,
+        //     longtext: `Take a look at this super website I have just found.`
+        //   };
+           return (
+                
+                <FooterWrapper>
+            
+                    <SectionContainer>
+                        <Titles>Social Media</Titles>
+                        <ul>
+                        {/* <ShareBlockStandard {...shareBlockProps} /> */}
+                            <li>
+                               <a href=""><FiTwitter /></a> 
+                            </li>
+                            <li>
+                               <a href=""><FiFacebook /></a> 
+                            </li>
+                            <li>
+                               <a href=""><FaEnvelope /></a> 
+                            </li>
+                            <li>
+                               <a href=""><FaLinkedin /></a> 
+                            </li>
+                        </ul>
+                    </SectionContainer>
+            
+                    {/* <SectionContainer>
+                        <Titles>Contact</Titles>
+                        <ul>
+                            <li>Stuff</li>
+                            <li>Stuff</li>
+                            <li>Stuff</li>
+                        </ul>
+                    </SectionContainer> */}
+            
+                    {/* <SectionContainer>
+                        <Titles>Extra</Titles>
+                        <ul>
+                            <li>Stuff</li>
+                            <li>Stuff</li>
+                            <li>Stuff</li>
+                        </ul>
+                    </SectionContainer>
+                    
+                    <SectionContainer>
+                        <Titles>Moar Extra</Titles>
+                        <ul>
+                            <li>Stuff</li>
+                            <li>Stuff</li>
+                            <li>Stuff</li>
+                        </ul>
+                    </SectionContainer> */}
+            
+                </FooterWrapper>       
+            );
+    }
+    
+} 
 
-        <SectionContainer>
-            <Titles>Social Media</Titles>
-            <ul>
-                <li>Stuff</li>
-                <li>Stuff</li>
-                <li>Stuff</li>
-            </ul>
-        </SectionContainer>
-
-        <SectionContainer>
-            <Titles>Contact</Titles>
-            <ul>
-                <li>Stuff</li>
-                <li>Stuff</li>
-                <li>Stuff</li>
-            </ul>
-        </SectionContainer>
-
-        <SectionContainer>
-            <Titles>Extra</Titles>
-            <ul>
-                <li>Stuff</li>
-                <li>Stuff</li>
-                <li>Stuff</li>
-            </ul>
-        </SectionContainer>
-        
-        <SectionContainer>
-            <Titles>Moar Extra</Titles>
-            <ul>
-                <li>Stuff</li>
-                <li>Stuff</li>
-                <li>Stuff</li>
-            </ul>
-        </SectionContainer>
-
-    </FooterWrapper>       
-);
 
 export default Footer;
