@@ -23,7 +23,7 @@ const Container = styled('div')`
   max-width: 960px;
   min-height: 80vh;
   text-shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d;
-  // color: #4d4d4d;
+
   color: #fff;
   p {
     font-size: 1.8rem;
@@ -31,13 +31,12 @@ const Container = styled('div')`
     font-weight: 300;
   }
   h2 {
-    // line-height: 2.9rem;
-    // font-weight: 300;
+    
   }
   a {
-    // color: #4d4d4d;
+
     color: #fff;
-    // color:#4d4d4d;
+
     &:hover {
       color: #1f2023;
       border-bottom: 2px solid;
@@ -66,12 +65,6 @@ const AboutPage = ({ data }) => (
 
         <h1>About</h1>
           <p>
-            {/* Lorem ipsum dolor amet edison bulb raclette skateboard typewriter bitters, heirloom cloud
-            bread tacos tumeric glossier. Pitchfork sustainable schlitz selfies ennui, roof party
-            craft beer 8-bit semiotics. Live-edge bespoke offal microdosing edison bulb crucifix.
-            Taxidermy kale chips pickled vexillologist chambray. Tumblr fixie poutine ennui mlkshk
-            cloud bread. */}
-
             Hi, my name is Leo Torres. I enjoy making the internet one website at a time. I'm a one
             man team that can provide you with a professional, great looking website to showcase
             your Blog, Business or whatever it is you want to share.

@@ -30,7 +30,6 @@ const Container = styled('div')`
     
   }
   a {
-    // color: #4d4d4d;
     color: #fff;
     &:hover {
       color: #1f2023;
@@ -72,18 +71,6 @@ const IndexPage = ({ data }) => (
               </h1> 
             </div>
           </div>
-          {/* <ul>
-            <li>
-              <Link  to="/about/">Go to the about page</Link>
-            </li>
-      
-            <li>
-              <Link  to="/contact/">Go to contact page</Link>
-            </li>
-            <li>
-              <Link  to="/portfolio/">Go to portfolio page</Link>
-            </li>
-          </ul> */}
         </Container>
       </Layout>
     </OuterWrapper>
