@@ -6,12 +6,12 @@ import { graphql, StaticQuery } from 'gatsby';
 import Header from './header';
 import Footer from './footer';
 import './layout.css';
-import { css } from 'react-emotion';
+// import { css } from 'react-emotion';
 
-const layoutStyle = css`
-  margin: 0 auto;
-  padding-top: 0;
-`;
+// const layoutStyle = css`
+//   margin: 0 auto;
+//   padding-top: 0;
+// `;
 
 
 
@@ -40,7 +40,7 @@ const Layout = ({ children }) => (
         
         <Header siteTitle={data.site.siteMetadata.title} />
 
-        <div className={ layoutStyle } >
+        <div style={{ margin: '0 auto', paddingTop: '0' }} >
           {children}
         
         </div>
