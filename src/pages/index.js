@@ -24,7 +24,6 @@ const Container = styled('div')`
   max-width: 960px;
   min-height: 80vh;
   text-shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d;
-  // color: #4d4d4d;
   color: #fff;
   p {
     
@@ -55,9 +54,9 @@ const IndexPage = ({ data }) => (
         height: '90%',
         // zIndex: '2',
         opacity: '0.8',
-        }}
-        fluid={data.background.fluid} alt="Bears in the mist." 
-        />
+      }}
+      fluid={data.background.fluid} alt="Bears in the mist." 
+      />
         <Container>
           <h1>Leo Torres | Web Developer</h1>
           <h2 >Websites, Blogs, E-Commerce</h2>
@@ -74,6 +73,7 @@ const IndexPage = ({ data }) => (
         </Container>
       </Layout>
     </OuterWrapper>
+
   </div>    
 );
 

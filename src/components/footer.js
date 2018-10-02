@@ -2,13 +2,6 @@ import React from 'react';
 import styled from 'react-emotion';
 import { FaEnvelope, FaLinkedin } from 'react-icons/fa';
 import { FiTwitter, FiFacebook } from 'react-icons/fi';
-// import FaTwitter from 'react-icons/lib/fa/twitter';
-// import FaFacebook from "react-icons/lib/fa/facebook";
-// import FaGooglePlus from "react-icons/lib/fa/google-plus";
-// import FaEnvelope from "react-icons/lib/fa/envelope";
-// import FaPinterest from "react-icons/lib/fa/pinterest";
-// import FaLinkedin from "react-icons/lib/fa/linkedin";
-import { ShareButtonOutline, ShareBlockStandard } from 'react-custom-share';
 
 const FooterWrapper = styled('div')`
     display: flex;
@@ -87,20 +80,6 @@ const Titles = styled('h1')`
 
 class Footer extends React.Component {
     render() {
-        // const shareBlockProps = {
-        //     url: "https://localhost:8000/",
-        //     button: ShareButtonOutline,
-        //     buttons: [
-        //       { network: "Twitter", icon: FiTwitter },
-        //       { network: "Facebook", icon: FiFacebook },
-        //     //   { network: "GooglePlus", icon: FiGooglePlus },
-        //       { network: "Email", icon: FaEnvelope },
-        //     //   { network: "Pinterest", icon: FiPinterest, media: "https://localhost:8000/image-to-share.jpg" },
-        //       { network: "Linkedin", icon: FaLinkedin }
-        //     ],
-        //     text: `Give it a try - mywebsite.com `,
-        //     longtext: `Take a look at this super website I have just found.`
-        //   };
            return (
                 
                 <FooterWrapper>
@@ -108,7 +87,6 @@ class Footer extends React.Component {
                     <SectionContainer>
                         <Titles>Social Media</Titles>
                         <ul>
-
                             <li>
                                <a href="https://twitter.com/oso_grizz" target="_blank" rel="noopener"><FiTwitter id="twitter" /></a> 
                             </li>
@@ -116,10 +94,10 @@ class Footer extends React.Component {
                                <a href=""><FiFacebook id="facebook" /></a> 
                             </li>
                             <li>
-                               <a href=""><FaEnvelope id="mail" /></a> 
+                               <a href="/contact/"><FaEnvelope id="mail" /></a> 
                             </li>
                             <li>
-                               <a href=""><FaLinkedin id="linkedin" /></a> 
+                               <a href="https://www.linkedin.com/in/leohtorres/" target="_blank" rel="nopopener"><FaLinkedin id="linkedin" /></a> 
                             </li>
                         </ul>
                     </SectionContainer>
