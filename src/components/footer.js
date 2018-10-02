@@ -39,17 +39,41 @@ const SectionContainer = styled('div')`
         li {
             display: inline-flex;
             margin-right: 20px;
+            FiTwitter {
+                height: 1.3em;
+                width: 1.3em;
+                font-weigth: lighter;
+    
+                &:hover {
+                stroke-width: 0;
+                color: orange;
+                fill: #00aced !important;
+                }
+            }
             svg {
                 height: 1.3em;
                 width: 1.3em;
-                
                 font-weigth: lighter;
-                &:hover {
-                    stroke-width: 0;
-                    color: orange;
-                    fill: orange !important;
-                }
-
+            }
+            #twitter:hover {
+                stroke-width: 0;
+                color: orange;
+                fill: #00aced !important;
+            }
+            #facebook:hover {
+                stroke-width: 0;
+                color: orange;
+                fill: #3b5998 !important;
+            }
+            #linkedin:hover {
+                stroke-width: 0;
+                color: orange;
+                fill: #0077B5 !important;
+            }
+            #mail:hover {
+                stroke-width: 0;
+                color: orange;
+                fill: orange !important;
             }
         }
     }
@@ -86,16 +110,16 @@ class Footer extends React.Component {
                         <ul>
 
                             <li>
-                               <a href="https://twitter.com/oso_grizz" target="_blank" rel="noopener"><FiTwitter /></a> 
+                               <a href="https://twitter.com/oso_grizz" target="_blank" rel="noopener"><FiTwitter id="twitter" /></a> 
                             </li>
                             <li>
-                               <a href=""><FiFacebook /></a> 
+                               <a href=""><FiFacebook id="facebook" /></a> 
                             </li>
                             <li>
-                               <a href=""><FaEnvelope /></a> 
+                               <a href=""><FaEnvelope id="mail" /></a> 
                             </li>
                             <li>
-                               <a href=""><FaLinkedin /></a> 
+                               <a href=""><FaLinkedin id="linkedin" /></a> 
                             </li>
                         </ul>
                     </SectionContainer>
