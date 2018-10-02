@@ -23,19 +23,19 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: 'Leo-T',
-    //     short_name: 'Leo-T',
-    //     start_url: '/',
-    //     // background_color: '#663399',
-    //     // theme_color: '#663399',
-    //     display: 'minimal-ui',
-    //     icon: 'src/images/fav-icon.png', // This path is relative to the root of the site.
-    //   },
-    // },
-    // 'gatsby-plugin-offline',
-    'gatsby-plugin-remove-serviceworker',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Leo-T',
+        short_name: 'Leo-T',
+        start_url: '/',
+        // background_color: '#663399',
+        // theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/images/fav-icon.png', // This path is relative to the root of the site.
+      },
+    },
+    'gatsby-plugin-offline',
+    // 'gatsby-plugin-remove-serviceworker',
   ],
 }
