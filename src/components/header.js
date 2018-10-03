@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styled from 'react-emotion';
+import styled from 'styled-components';
 
 
-const HeaderWrapper = styled('div')`
+const HeaderWrapper = styled.div`
   position: relative;
   display: inline-flex;
   max-width: 100%;
@@ -42,7 +42,7 @@ const HeaderWrapper = styled('div')`
   }
 `;
 
-const LogoContainer = styled('div')`
+const LogoContainer = styled.div`
   z-index: 3;
   min-width: 75vw;
   margin: 0 auto';
@@ -52,7 +52,7 @@ const LogoContainer = styled('div')`
   }
 `;
 
-const NavContainer = styled('div')`
+const NavContainer = styled.div`
   z-index: 3;
   min-width: 25vw;
   margin: 0;

@@ -1,9 +1,9 @@
 import React from 'react';
-import styled from 'react-emotion';
+import styled from 'styled-components';
 import { FaEnvelope, FaLinkedin } from 'react-icons/fa';
 import { FiTwitter, FiFacebook } from 'react-icons/fi';
 
-const FooterWrapper = styled('div')`
+const FooterWrapper = styled.div`
     display: flex;
     position: sticky;
     width: 100vw;
@@ -24,7 +24,7 @@ const FooterWrapper = styled('div')`
     color: #6a6a6a;
 `;
 
-const SectionContainer = styled('div')`
+const SectionContainer = styled.div`
     text-align: center;
     justify-content: space-around;
     ul {
@@ -73,7 +73,7 @@ const SectionContainer = styled('div')`
     }
 `;
 
-const Titles = styled('h1')`
+const Titles = styled.h1`
     font-size: 2rem;
     text-align: center;
 `;

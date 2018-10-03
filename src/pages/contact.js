@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styled from 'react-emotion';
+import styled from 'styled-components';
 
 import Layout from '../components/layout';
 
-const OuterWrapper = styled('div')`
+const OuterWrapper = styled.div`
   margin: 0 auto;
   padding-top: 0;
 `;
 
-const Container = styled('div')`
+const Container = styled.div`
   position: relative;
   z-index: 2;
   margin: 0 auto;

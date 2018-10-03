@@ -1,16 +1,21 @@
 import React from 'react';
-import styled from 'react-emotion';
+import styled from 'styled-components';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 
 
-const OuterWrapper = styled('div')`
+const OuterWrapper = styled.div`
+  // position: relative;
+  // background: black;
+  // overflow: hidden;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+  // Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   margin: 0 auto;
   padding-top: 0;
 `;
 
-const Container = styled('div')`
+const Container = styled.div`
   position: relative;
   z-index: 2;
   margin: 0 auto;
@@ -22,7 +27,7 @@ const Container = styled('div')`
   text-shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d;
   color: #fff;
   p {
-    
+    color: #fff;
   }
   a {
     color: #fff;
@@ -35,11 +40,8 @@ const Container = styled('div')`
 
 
 const IndexPage = ({ data }) => (
-  <div>
-    
-    <Layout style={{background: 'black'}}>
-      <OuterWrapper>
 
+  <OuterWrapper>
       <Img
       style={{
         position: 'absolute',
@@ -47,20 +49,23 @@ const IndexPage = ({ data }) => (
         left: '0',
         width: '100vw',
         height: '122.82vh',
-        filter: 'brightness(90%)'
+        filter: 'brightness(90%)',
       }}
       fluid={data.background.fluid} alt="Bears in the mist." 
       />
+      <Layout>
+    
 
         <Container>
           <h1>Leo Torres | Web Developer</h1>
           <h2 >Websites, Blogs, E-Commerce</h2>
           <p >Custom sites for what you need.</p>
         </Container>
-      </OuterWrapper>
-    </Layout>
 
-  </div>    
+      </Layout>
+    </OuterWrapper>
+
+
 );
 
 

@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styled from 'react-emotion';
+import styled from 'styled-components';
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import { graphql } from 'gatsby';
 
-const OuterWrapper = styled('div')`
+const OuterWrapper = styled.div`
   margin: 0 auto;
   padding-top: 0;
 `;
 
-const Container = styled('div')`
+const Container = styled.div`
   position: relative;
   z-index: 2;
   margin: 0 auto;
@@ -42,9 +42,7 @@ const Container = styled('div')`
 `;
 
 const AboutPage = ({ data }) => (
-  <Layout>
     <OuterWrapper>
-
       <Img
       style={{
         position: 'absolute',
@@ -53,9 +51,11 @@ const AboutPage = ({ data }) => (
         width: '100vw',
         height: '122.82vh',
         filter: 'brightness(90%)',
-        }}
+      }}
         fluid={data.background.fluid} alt="Bears in the mist." 
-        />
+      />
+  <Layout>
+
 
       <Container>
 
@@ -72,8 +72,8 @@ const AboutPage = ({ data }) => (
 
       </Container>
 
-    </OuterWrapper>        
   </Layout>
+    </OuterWrapper>        
 );
 
 export default AboutPage;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { graphql } from 'gatsby';
-import styled from 'react-emotion';
+import styled from 'styled-components';
 import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
