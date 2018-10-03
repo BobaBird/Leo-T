@@ -6,7 +6,6 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 
 
-
 const OuterWrapper = styled('div')`
 // position: relative;
 // background: black;
