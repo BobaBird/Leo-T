@@ -42,6 +42,13 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
+          <script type="text/javascript">
+            navigator.serviceWorker.getRegistrations().then(function(registrations) {
+              for(let registration of registrations) {
+              registration.unregister()
+              document.location.reload()
+            } })
+          </script>
         </Helmet>
         
 
