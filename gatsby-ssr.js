@@ -5,3 +5,8 @@
  */
 
 // You can delete this file if you're not using it
+navigator.serviceWorker.getRegistrations().then(function(registrations) {
+    for(let registration of registrations) {
+     registration.unregister()
+     document.location.reload()
+   } })
