@@ -54,7 +54,6 @@ const IndexPage = ({ data }) => (
       fluid={data.background.fluid} alt="Bears in the mist." 
       />
       <Layout>
-    
 
         <Container>
           <h1>Leo Torres | Web Developer</h1>

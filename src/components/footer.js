@@ -79,62 +79,57 @@ const Titles = styled.h1`
 `;
 
 
-class Footer extends React.Component {
-    render() {
-           return (
+const Footer = () => (
                 
-                <FooterWrapper>
-            
-                    <SectionContainer>
-                        <Titles>Social Media</Titles>
-                        <ul>
-                            <li>
-                               <a href="https://twitter.com/oso_grizz" target="_blank" rel="noopener"><FiTwitter id="twitter" /></a> 
-                            </li>
-                            <li>
-                               <a href=""><FiFacebook id="facebook" /></a> 
-                            </li>
-                            <li>
-                               <a href="/contact/"><FaEnvelope id="mail" /></a> 
-                            </li>
-                            <li>
-                               <a href="https://www.linkedin.com/in/leohtorres/" target="_blank" rel="nopopener"><FaLinkedin id="linkedin" /></a> 
-                            </li>
-                        </ul>
-                    </SectionContainer>
-            
-                    {/* <SectionContainer>
-                        <Titles>Contact</Titles>
-                        <ul>
-                            <li>Stuff</li>
-                            <li>Stuff</li>
-                            <li>Stuff</li>
-                        </ul>
-                    </SectionContainer> */}
-            
-                    {/* <SectionContainer>
-                        <Titles>Extra</Titles>
-                        <ul>
-                            <li>Stuff</li>
-                            <li>Stuff</li>
-                            <li>Stuff</li>
-                        </ul>
-                    </SectionContainer>
-                    
-                    <SectionContainer>
-                        <Titles>Moar Extra</Titles>
-                        <ul>
-                            <li>Stuff</li>
-                            <li>Stuff</li>
-                            <li>Stuff</li>
-                        </ul>
-                    </SectionContainer> */}
-            
-                </FooterWrapper>       
-            );
-    }
-    
-} 
+    <FooterWrapper>
+
+        <SectionContainer>
+            <Titles>Social Media</Titles>
+            <ul>
+                <li>
+                    <a href="https://twitter.com/oso_grizz" target="_blank" rel="noopener"><FiTwitter id="twitter" /></a> 
+                </li>
+                <li>
+                    <a href=""><FiFacebook id="facebook" /></a> 
+                </li>
+                <li>
+                    <a href="/contact/"><FaEnvelope id="mail" /></a> 
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/leohtorres/" target="_blank" rel="nopopener"><FaLinkedin id="linkedin" /></a> 
+                </li>
+            </ul>
+        </SectionContainer>
+
+        {/* <SectionContainer>
+            <Titles>Contact</Titles>
+            <ul>
+                <li>Stuff</li>
+                <li>Stuff</li>
+                <li>Stuff</li>
+            </ul>
+        </SectionContainer> */}
+
+        {/* <SectionContainer>
+            <Titles>Extra</Titles>
+            <ul>
+                <li>Stuff</li>
+                <li>Stuff</li>
+                <li>Stuff</li>
+            </ul>
+        </SectionContainer>
+        
+        <SectionContainer>
+            <Titles>Moar Extra</Titles>
+            <ul>
+                <li>Stuff</li>
+                <li>Stuff</li>
+                <li>Stuff</li>
+            </ul>
+        </SectionContainer> */}
+
+    </FooterWrapper>       
+);
 
 
 export default Footer;

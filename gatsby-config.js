@@ -35,6 +35,6 @@ module.exports = {
         icon: 'src/images/fav-icon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
+    // 'gatsby-plugin-offline',
   ],
 }

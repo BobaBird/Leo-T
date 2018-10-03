@@ -56,7 +56,6 @@ const AboutPage = ({ data }) => (
       />
     <Layout>
 
-
       <Container>
 
         <h1>About</h1>
