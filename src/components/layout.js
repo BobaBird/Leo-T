@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { graphql, StaticQuery } from 'gatsby';
 
@@ -42,13 +42,7 @@ const Layout = ({ children }) => (
           ]}
         >
           <html lang="en" />
-          <script type="text/javascript">
-            navigator.serviceWorker.getRegistrations().then(function(registrations) {
-              for(let registration of registrations) {
-              registration.unregister()
-              document.location.reload()
-            } })
-          </script>
+          
         </Helmet>
         
 
@@ -66,9 +60,9 @@ const Layout = ({ children }) => (
     />
 );
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+// Layout.propTypes = {
+//   children: PropTypes.node.isRequired,
+// };
 
 export default Layout;
 
