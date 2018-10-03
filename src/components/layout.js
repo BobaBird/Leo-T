@@ -46,10 +46,13 @@ const Layout = ({ children }) => (
         
 
         <div className={ layoutStyle } >
-        <Header siteTitle={data.site.siteMetadata.title} />
+
+          <Header siteTitle={data.site.siteMetadata.title} />
+
           {children}
-        <Footer />
-        
+
+          <Footer />
+
         </div>
         </>
       )}

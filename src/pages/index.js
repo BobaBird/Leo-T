@@ -6,6 +6,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import PostListing from '../components/Post/PostListing'
 
+
 const OuterWrapper = styled('div')`
 // position: relative;
 // background: black;
@@ -64,7 +65,7 @@ const IndexPage = ({ data }) => (
           <h1>Leo Torres | Web Developer</h1>
           <h2 >Websites, Blogs, E-Commerce</h2>
           <p >Custom sites for what you need.</p>
-          <div>
+          {/* <div>
             <div>
               <h1 >
               {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -72,7 +73,7 @@ const IndexPage = ({ data }) => (
                 ))}
               </h1> 
             </div>
-          </div>
+          </div> */}
         </Container>
       </OuterWrapper>
     </Layout>
@@ -88,19 +89,6 @@ export const query = graphql`
     background: imageSharp(fluid: {originalName: {eq: "homeBG.jpg" } } ) {
 			fluid(maxWidth: 1240) {
       ...GatsbyImageSharpFluid
-      }
-    }
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date
-          }
-          html
-          excerpt
-        }
       }
     }
   }
