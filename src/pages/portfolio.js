@@ -178,20 +178,6 @@ export const query = graphql`
       ...GatsbyImageSharpFluid
       }
     }
-    
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date
-          }
-          html
-          excerpt
-        }
-      }
-    }
   }
 `;
 
