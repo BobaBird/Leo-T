@@ -4,7 +4,7 @@ import styled from 'react-emotion';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
-import PostListing from '../components/Post/PostListing'
+
 
 
 const OuterWrapper = styled('div')`
