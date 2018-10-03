@@ -55,7 +55,7 @@ const IndexPage = ({ data }) => (
         width: '100vw',
         height: '122.82vh',
         // zIndex: '2',
-        // opacity: '0.8',
+        filter: 'brightness(90%)'
       }}
       fluid={data.background.fluid} alt="Bears in the mist." 
       />
