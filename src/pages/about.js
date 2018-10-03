@@ -6,12 +6,6 @@ import Layout from '../components/layout';
 import { graphql } from 'gatsby';
 
 const OuterWrapper = styled('div')`
-// position: relative;
-// background: black;
-// overflow: hidden;
-// font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-//   Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
   margin: 0 auto;
   padding-top: 0;
 `;
@@ -58,7 +52,6 @@ const AboutPage = ({ data }) => (
         left: '0',
         width: '100vw',
         height: '122.82vh',
-        // zIndex: '2',
         filter: 'brightness(90%)',
         }}
         fluid={data.background.fluid} alt="Bears in the mist." 

@@ -1,19 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styled, { css } from 'react-emotion';
+import styled from 'react-emotion';
 
 import Layout from '../components/layout';
 
-const ContactBG = css`
-  background: #fff !important;
-`;
-
 const OuterWrapper = styled('div')`
-  // position: relative;
-  // overflow: hidden;
-  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-  //   Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
   margin: 0 auto;
   padding-top: 0;
 `;
@@ -27,7 +18,6 @@ const Container = styled('div')`
   margin-top: 1.45rem;
   max-width: 960px;
   min-height: 80vh;
-
   color: #4d4d4d;
 
   p {
@@ -108,7 +98,7 @@ const Container = styled('div')`
 `;
 
 const ContactPage = () => (
-  <Layout className= { ContactBG }>
+  <Layout>
     <OuterWrapper>
       <Container>
         <h1>Contact</h1>

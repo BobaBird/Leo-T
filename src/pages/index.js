@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'gatsby';
 import styled from 'react-emotion';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
@@ -7,12 +6,6 @@ import Layout from '../components/layout';
 
 
 const OuterWrapper = styled('div')`
-// position: relative;
-// background: black;
-// overflow: hidden;
-// font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-//   Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
   margin: 0 auto;
   padding-top: 0;
 `;
@@ -54,7 +47,6 @@ const IndexPage = ({ data }) => (
         left: '0',
         width: '100vw',
         height: '122.82vh',
-        // zIndex: '2',
         filter: 'brightness(90%)'
       }}
       fluid={data.background.fluid} alt="Bears in the mist." 
@@ -64,15 +56,6 @@ const IndexPage = ({ data }) => (
           <h1>Leo Torres | Web Developer</h1>
           <h2 >Websites, Blogs, E-Commerce</h2>
           <p >Custom sites for what you need.</p>
-          {/* <div>
-            <div>
-              <h1 >
-              {data.allMarkdownRemark.edges.map(({ node }) => (
-                <PostListing key={node.id} post={node} />
-                ))}
-              </h1> 
-            </div>
-          </div> */}
         </Container>
       </OuterWrapper>
     </Layout>
