@@ -7,11 +7,14 @@ import Layout from '../components/layout';
 import PostListing from '../components/Post/PostListing'
 
 const OuterWrapper = styled('div')`
-position: relative;
-background: black;
-overflow: hidden;
-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-  Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+// position: relative;
+// background: black;
+// overflow: hidden;
+// font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+//   Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  margin: 0 auto;
+  padding-top: 0;
 `;
 
 const Container = styled('div')`
@@ -41,22 +44,22 @@ const Container = styled('div')`
 const IndexPage = ({ data }) => (
   <div>
     
-    <OuterWrapper>
-      <Layout>
-
+    <Layout style={{background: 'black'}}>
+      <OuterWrapper>
 
       <Img
       style={{
         position: 'absolute',
         top: '0',
         left: '0',
-        width: '100%',
-        height: '90%',
+        width: '100vw',
+        height: '122.82vh',
         // zIndex: '2',
-        opacity: '0.8',
+        // opacity: '0.8',
       }}
       fluid={data.background.fluid} alt="Bears in the mist." 
       />
+
         <Container>
           <h1>Leo Torres | Web Developer</h1>
           <h2 >Websites, Blogs, E-Commerce</h2>
@@ -71,8 +74,8 @@ const IndexPage = ({ data }) => (
             </div>
           </div>
         </Container>
-      </Layout>
-    </OuterWrapper>
+      </OuterWrapper>
+    </Layout>
 
   </div>    
 );

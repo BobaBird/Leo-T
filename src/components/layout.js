@@ -9,8 +9,14 @@ import './layout.css';
 import { css } from 'react-emotion';
 
 const layoutStyle = css`
-  margin: 0 auto;
-  padding-top: 0;
+  // margin: 0 auto;
+  // padding-top: 0;
+
+  // position: relative;
+  // background: black;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+  Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 `;
 
 
@@ -38,13 +44,13 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         
-        <Header siteTitle={data.site.siteMetadata.title} />
 
         <div className={ layoutStyle } >
+        <Header siteTitle={data.site.siteMetadata.title} />
           {children}
+        <Footer />
         
         </div>
-        <Footer />
         </>
       )}
     />

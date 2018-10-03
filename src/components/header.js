@@ -17,7 +17,6 @@ const HeaderWrapper = styled('div')`
     font-size: 2.25rem;
     a {
       text-decoration: none;
-      // color: #fff;
       color: #1f2023;
       text-shadow: 0.5px 0.5px 1px #636363, -0.25px -0.25px 2px #636363;
       padding-left: 40px;
@@ -63,6 +62,9 @@ const NavContainer = styled('div')`
       transition: all 230ms ease;
       border-bottom: 5px solid cornflowerblue;
     }
+  }
+  .active {
+    border-bottom: 5px solid cornflowerblue;
   }
 `;
 

@@ -32,42 +32,43 @@ const SectionContainer = styled('div')`
         li {
             display: inline-flex;
             margin-right: 20px;
-            FiTwitter {
-                height: 1.3em;
-                width: 1.3em;
-                font-weigth: lighter;
-    
-                &:hover {
-                stroke-width: 0;
-                color: orange;
-                fill: #00aced !important;
-                }
-            }
+            
             svg {
                 height: 1.3em;
                 width: 1.3em;
                 font-weigth: lighter;
             }
-            #twitter:hover {
-                stroke-width: 0;
-                color: orange;
-                fill: #00aced !important;
+
+            #twitter {
+                stroke: #00aced;
+                &:hover {
+                    stroke-width: 0;
+                    color: orange;
+                    fill: #00aced !important;
+                }
             }
-            #facebook:hover {
-                stroke-width: 0;
-                color: orange;
-                fill: #3b5998 !important;
+            #facebook {
+                stroke: #3b5998;
+                &:hover {
+                    stroke-width: 0;
+                    color: orange;
+                    fill: #3b5998 !important;
+                }
             }
-            #linkedin:hover {
-                stroke-width: 0;
-                color: orange;
-                fill: #0077B5 !important;
+            #linkedin {
+                &:hover {
+                    stroke-width: 0;
+                    color: orange;
+                    fill: #0077B5 !important;
+                }
             }
-            #mail:hover {
-                stroke-width: 0;
-                color: orange;
-                fill: orange !important;
-            }
+            #mail {
+                &:hover {
+                    stroke-width: 0;
+                    color: orange;
+                    fill: orange !important;
+                }
+            } 
         }
     }
 `;

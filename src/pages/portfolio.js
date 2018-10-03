@@ -68,12 +68,22 @@ const Card = styled.div`
   box-shadow: 0 8px 26px 0 rgba(0, 0, 0, 0.15), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
 
   h1 {
+    position: relative;
+    margin-top: 0;
+    z-index: 12;
+    // visibility: hidden;
     padding: 0.8rem;
+    &:hover {
+      // visibility: visible;
+    }
   }
 
   p {
+    position: relative;
+    z-index: 99;
     padding: 0.8rem;
     font-size: 18px;
+    color: #fff;
   }
 
   @media only screen and (max-width 1082px) and (min-width: 426px) {
@@ -83,6 +93,7 @@ const Card = styled.div`
   @media only screen and (max-width: 425px) {
     margin-top: 80px;
     p {
+
       font-size: 0.8rem;
     }
   }
@@ -99,10 +110,13 @@ const Portfolio = ({ data }) => (
 
             <CardContainer>
               <Card>
-                <Img
-                  
-                  fluid={data.card.fluid} 
-                />
+                <a href="https://somaticwellness-coach.com/" target="_blank" rel="noopener">
+                  <Img
+                    style={{height: '100%'}}
+                    fluid={data.somatic.fluid} 
+                  />
+                  {/* <p>SomaticWellnes-coach.com</p> */}
+                </a>
               </Card>
 
               <Card>
@@ -159,6 +173,12 @@ export const query = graphql`
       ...GatsbyImageSharpFluid
       }
     }
+    somatic: imageSharp(fluid: {originalName: {eq: "somatic.png" } } ) {
+      fluid(maxWidth: 400) {
+      ...GatsbyImageSharpFluid
+      }
+    }
+    
     allMarkdownRemark {
       edges {
         node {

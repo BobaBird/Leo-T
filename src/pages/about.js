@@ -6,11 +6,14 @@ import Layout from '../components/layout';
 import { graphql } from 'gatsby';
 
 const OuterWrapper = styled('div')`
-position: relative;
-background: black;
-overflow: hidden;
-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-  Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+// position: relative;
+// background: black;
+// overflow: hidden;
+// font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+//   Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  margin: 0 auto;
+  padding-top: 0;
 `;
 
 const Container = styled('div')`
@@ -45,18 +48,18 @@ const Container = styled('div')`
 `;
 
 const AboutPage = ({ data }) => (
-  <OuterWrapper>
-    <Layout>
+  <Layout>
+    <OuterWrapper>
 
       <Img
       style={{
         position: 'absolute',
         top: '0',
         left: '0',
-        width: '100%',
-        height: '90%',
+        width: '100vw',
+        height: '122.82vh',
         // zIndex: '2',
-        opacity: '0.8',
+        // opacity: '0.8',
         }}
         fluid={data.background.fluid} alt="Bears in the mist." 
         />
@@ -76,8 +79,8 @@ const AboutPage = ({ data }) => (
 
       </Container>
 
-    </Layout>
-  </OuterWrapper>        
+    </OuterWrapper>        
+  </Layout>
 );
 
 export default AboutPage;
