@@ -5,7 +5,7 @@ import { FiTwitter, FiFacebook } from 'react-icons/fi';
 
 const FooterWrapper = styled.div`
     display: flex;
-    position: sticky;
+    position: relative;
     width: 100vw;
     bottom: 0;
     left: 0;

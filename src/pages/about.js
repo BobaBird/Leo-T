@@ -42,7 +42,7 @@ const Container = styled.div`
 `;
 
 const AboutPage = ({ data }) => (
-    <OuterWrapper>
+  <OuterWrapper>
       <Img
       style={{
         position: 'absolute',
@@ -54,7 +54,7 @@ const AboutPage = ({ data }) => (
       }}
         fluid={data.background.fluid} alt="Bears in the mist." 
       />
-  <Layout>
+    <Layout>
 
 
       <Container>
@@ -72,8 +72,8 @@ const AboutPage = ({ data }) => (
 
       </Container>
 
-  </Layout>
-    </OuterWrapper>        
+    </Layout>
+  </OuterWrapper>        
 );
 
 export default AboutPage;
