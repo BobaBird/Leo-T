@@ -38,6 +38,27 @@ const Container = styled.div`
 }
 `;
 
+console.log('removing service worker')
+if (typeof window !== 'undefined') {
+  if ('serviceWorker' in window.navigator) {
+    window.navigator.serviceWorker.ready.then(registration => {
+      registration.unregister();
+    });
+  }
+}
+self.addEventListener('install', function(e) {
+  self.skipWaiting();
+});
+
+self.addEventListener('activate', function(e) {
+  self.registration.unregister()
+    .then(function() {
+      return self.clients.matchAll();
+    })
+    .then(function(clients) {
+      clients.forEach(client => client.navigate(client.url))
+    });
+});
 
 const IndexPage = ({ data }) => (
 
