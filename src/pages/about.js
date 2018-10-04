@@ -6,37 +6,34 @@ import Layout from '../components/layout';
 import { graphql } from 'gatsby';
 
 const OuterWrapper = styled.div`
-  margin: 0 auto;
-  padding-top: 0;
+  margin: 0 auto !important;
+  padding-top: 0 !important;
 `;
 
 const Container = styled.div`
-  position: relative;
-  z-index: 2;
-  margin: 0 auto;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
-  margin-top: 1.45rem;
-  max-width: 960px;
-  min-height: 80vh;
-  text-shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d;
-
-  color: #fff;
+  position: relative !important;
+  z-index: 2 !important;
+  margin: 0 auto !important;
+  padding: 0px 1.0875rem 1.45rem !important;
+  padding-top: 0 !important;
+  margin-top: 1.45rem !important;
+  max-width: 960px !important;
+  min-height: 80vh !important;
+  text-shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d !i9mportant;
+  color: #fff !important;
   p {
-    font-size: 1.8rem;
-    line-height: 2.9rem;
-    font-weight: 300;
+    font-size: 1.8rem !important !important;
+    line-height: 2.9rem !important !important;
+    font-weight: 300 !important;
   }
   h2 {
     
   }
   a {
-
-    color: #fff;
-
+    color: #fff !important;
     &:hover {
-      color: #1f2023;
-      border-bottom: 2px solid;
+      color: #1f2023 !important;
+      border-bottom: 2px solid !important;
     }
 }
 `;
