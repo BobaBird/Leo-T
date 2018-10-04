@@ -33,7 +33,8 @@ const Layout = ({ children }) => (
         </Helmet>
         
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div>
+        <div style={{position: 'relative',margin: '0 auto', maxWidth: '960px', fontFamily: `-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+             Fira Sans, Droid Sans, Helvetica Neue, sans-serif`, color: '#fff'}}>
           {children}
         </div> 
         <Footer />
