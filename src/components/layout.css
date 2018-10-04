@@ -626,6 +626,36 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+.aboutStyles {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+  margin-top: 1.45rem;
+  max-width: 960px;
+  min-height: 90vh;
+  text-shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d;
+  color: #fff;
+  
+}
+
+.aboutP {
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    font-weight: 300;
+}
+
+.aboutA {
+    color: #fff;
+}
+.aboutA:hover {
+  color: #1f2023;
+  border-bottom: 2px solid;
+}
+
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

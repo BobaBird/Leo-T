@@ -18,8 +18,8 @@ const Container = styled.div`
   padding-top: 0;
   margin-top: 1.45rem;
   max-width: 960px;
-  min-height: 80vh;
-  text-shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d !i9mportant;
+  min-height: 90vh;
+  text-shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d;
   color: #fff;
   p {
     font-size: 1.8rem;
@@ -35,7 +35,7 @@ const Container = styled.div`
       color: #1f2023;
       border-bottom: 2px solid;
     }
-}
+  }
 `;
 
 const AboutPage = ({ data }) => (
@@ -53,17 +53,19 @@ const AboutPage = ({ data }) => (
       />
     <Layout>
 
-      <Container>
+      <Container className="aboutStyles" >
 
         <h1>About</h1>
-          <p>
+          <p className="aboutP">
             Hi, my name is Leo Torres. I enjoy making the internet one website at a time. I'm a one
             man team that can provide you with a professional, great looking website to showcase
             your Blog, Business or whatever it is you want to share.
           </p>
-            <p><Link to="/portfolio/"> Take a look at some of my work.</Link></p> 
-          <p>
-            <Link to="/contact/"> Or, let's get started now.</Link>
+          <p className="aboutP">
+            <Link className="aboutA" to="/portfolio/"> Take a look at some of my work.</Link>
+          </p> 
+          <p className="aboutP">
+            <Link className="aboutA" to="/contact/"> Or, let's get started now.</Link>
           </p>
 
       </Container>

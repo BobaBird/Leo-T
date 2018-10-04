@@ -16,24 +16,24 @@ const OuterWrapper = styled.div`
 `;
 
 const Container = styled.div`
-  position: relative !important;
-  z-index: 2 !important;
-  margin: 0 auto !important;
-  padding: 0px 1.0875rem 1.45rem !important;
-  padding-top: 0 !important;
-  margin-top: 1.45rem !important;
-  max-width: 960px !important;
-  min-height: 80vh !important;
-  text-shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d !important;
-  color: #fff !importnt;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+  margin-top: 1.45rem;
+  max-width: 960px;
+  min-height: 80vh;
+  text-shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d;
+  color: #fff;
   p {
-    color: #fff !important;
+    color: #fff;
   }
   a {
-    color: #fff !important; 
+    color: #fff; 
     &:hover {
-      color: #1f2023 !important;
-      border-bottom: 2px solid !important;
+      color: #1f2023;
+      border-bottom: 2px solid;
     }
 }
 `;
